@@ -12,7 +12,7 @@ from calc_angles import rangles
 
 
 def init_cam():
-    cam = cv2.VideoCapture(1)
+    cam = cv2.VideoCapture(0)
     cam.set(cv2.CAP_PROP_AUTOFOCUS, 0)
     cam.set(cv2.CAP_PROP_FOCUS, 360)
     cam.set(cv2.CAP_PROP_BRIGHTNESS, 130)
@@ -104,9 +104,9 @@ def destory(cam, tts_proc, tts_q):
 
 if __name__ == "__main__":
     cam = init_cam()
-    model = pk.load(open("yoga-pose-detection-correction/models/4_poses.model", "rb"))
+    model = pk.load(open("models/4_poses.model", "rb"))
     cols, landmarks_points_array = init_dicts()
-    angles_df = pd.read_csv("yoga-pose-detection-correction/csv_files/4_angles_poses_angles.csv")
+    angles_df = pd.read_csv("csv_files/4_angles_poses_angles.csv")
     mp_drawing = mp.solutions.drawing_utils
     mp_pose = mp.solutions.pose
 

@@ -1,3 +1,7 @@
+# macOS system files
+.DS_Store
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -167,3 +171,5 @@ poses_dataset/angles/*
 !poses_dataset/angles/.gitkeep
 poses_dataset/Images/*
 !poses_dataset/Images/.gitkeep
+.DS_Store
+.DS_Store

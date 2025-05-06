@@ -12,7 +12,7 @@ from calc_angles import rangles
 
 
 def init_cam():
-    cam = cv2.VideoCapture(0)
+    cam = cv2.VideoCapture(1) # |0 for mac | 1 for phone|
     cam.set(cv2.CAP_PROP_AUTOFOCUS, 0)
     cam.set(cv2.CAP_PROP_FOCUS, 360)
     cam.set(cv2.CAP_PROP_BRIGHTNESS, 130)

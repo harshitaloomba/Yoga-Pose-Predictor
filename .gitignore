@@ -173,3 +173,5 @@ poses_dataset/Images/*
 !poses_dataset/Images/.gitkeep
 .DS_Store
 .DS_Store
+
+poses_dataset/
